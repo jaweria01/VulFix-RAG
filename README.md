@@ -68,59 +68,37 @@ Uses DeepSeek through OpenRouter to generate secure code patches.
 Automatically validates generated patches against vulnerability-specific security rules.
 
 ## System Architecture
-┌──────────────────────┐
-│   Input Source Code  │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ AST-Based Static     │
-│ Analysis             │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Vulnerability        │
-│ Detection            │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ CWE Classification   │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ ChromaDB Semantic    │
-│ Retrieval            │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Security Knowledge   │
-│ Retrieval            │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ DeepSeek LLM         │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Patch Generation     │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Patch Validation     │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Validated Security   │
-│ Patch                │
-└──────────────────────┘
+Input Source Code
+│ 
+▼ 
+
+AST-Based Static Analysis 
+│ 
+▼ 
+
+Vulnerability Detection
+│ 
+▼ 
+
+CWE Classification 
+│ 
+▼ 
+ChromaDB Semantic Retrieval 
+│ 
+▼ 
+Security Knowledge Retrieval 
+│ 
+▼ 
+DeepSeek LLM 
+│ 
+▼ 
+Patch Generation 
+│ 
+▼ 
+Patch Validation 
+│ 
+▼ 
+Validated Security Patch
 
 ## Workflow Explanation
 
