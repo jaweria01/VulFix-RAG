@@ -69,8 +69,7 @@ Automatically validates generated patches against vulnerability-specific securit
 
 ## Experimental Results and Workflow Demonstration
 
-### System Architecture
-
+### Figure 1. System Architecture
 ![System Architecture](https://github.com/jaweria01/VulFix-RAG/blob/cae03f7ccc3338ae2ea99996a0875d36122e6624/Screenshots/Fig1-VulFix-RAG%20System%20Architecture.png)
 
 ### Figure 2. AST-Based Vulnerability Detection
