@@ -70,14 +70,19 @@ Automatically validates generated patches against vulnerability-specific securit
 ## System Architecture
 Input Source Code
 │ 
+
 ▼ 
 
-AST-Based Static Analysis 
+AST-Based Static Analysis
+
 │ 
+
 ▼ 
 
 Vulnerability Detection
+
 │ 
+
 ▼ 
 
 CWE Classification 
