@@ -1,0 +1,36 @@
+Vulnerability Name:
+SQL Injection
+
+CWE:
+CWE-89
+
+Description:
+SQL Injection occurs when untrusted user input is incorporated directly into an SQL query. Attackers can manipulate query logic and access, modify, or delete database records.
+
+Risk Level:
+High
+
+Detection Indicators:
+- String concatenation used in SQL queries
+- f-strings used in SQL queries
+- format() used in SQL queries
+- User input directly inserted into SQL statements
+
+Secure Coding Guidance:
+- Use parameterized queries
+- Use prepared statements
+- Never concatenate user input into SQL queries
+
+Repair Strategy:
+Replace dynamic query construction with parameterized queries.
+
+Vulnerable Example:
+
+query = "SELECT * FROM users WHERE id=" + user_input
+
+Secure Example:
+
+cursor.execute(
+    "SELECT * FROM users WHERE id=?",
+    (user_input,)
+)

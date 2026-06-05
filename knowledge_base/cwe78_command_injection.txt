@@ -1,0 +1,37 @@
+Vulnerability Name:
+Command Injection
+
+CWE:
+CWE-78
+
+Description:
+Command Injection occurs when user-controlled data is passed to operating system commands. Attackers may execute arbitrary system commands.
+
+Risk Level:
+Critical
+
+Detection Indicators:
+- os.system()
+- subprocess.run(..., shell=True)
+- subprocess.Popen(..., shell=True)
+- User input passed into command strings
+
+Secure Coding Guidance:
+- Avoid shell=True
+- Use argument lists
+- Validate and sanitize inputs
+- Use allowlists
+
+Repair Strategy:
+Replace shell commands with safe subprocess calls using argument arrays.
+
+Vulnerable Example:
+
+os.system("cat " + filename)
+
+Secure Example:
+
+subprocess.run(
+    ["cat", filename],
+    shell=False
+)
