@@ -121,3 +121,14 @@ The generated patch is automatically validated using vulnerability-specific secu
 **10. Validated Security Patch**
 
 If validation succeeds, the framework outputs a validated security patch that can be reviewed and integrated by developers.
+
+## Future Work
+
+- Support for additional CWE categories
+- Multi-language vulnerability analysis
+- Automatic patch ranking and scoring
+- Vulnerability dataset generation
+- CI/CD security integration
+- Comparative evaluation of multiple code LLMs
+- Automated vulnerability repair benchmarking
+- LLM agent security analysis
