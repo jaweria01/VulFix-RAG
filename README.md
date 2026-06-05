@@ -71,25 +71,38 @@ Automatically validates generated patches against vulnerability-specific securit
 
 ![System Architecture](https://github.com/jaweria01/VulFix-RAG/blob/cae03f7ccc3338ae2ea99996a0875d36122e6624/Screenshots/Fig1-VulFix-RAG%20System%20Architecture.png)
 
-## Figure 2 — Vulnerability Detection
+## Figure 2. AST-Based Vulnerability Detection
 
 *AST-based vulnerability detection identifying SQL Injection, Command Injection, and Hardcoded Credentials.*
 
 ![Vulnerability Detection](https://github.com/jaweria01/VulFix-RAG/blob/be3e14c86389f3dea781398a6f9bd86bf9a012fa/Screenshots/Fig2-Vulnerability%20Detection.png)
 
+### Figure 3. Knowledge Base Loaded into Chromadb
 
-## Figure 3 — Patch Generation
+Security knowledge documents(CWE-specific security guidance) are embedded and stored in ChromaDB for semantic retrieval during vulnerability repair, enabling efficient similarity-based retrieval.
+
+![Security Knowledge Retrieval](https://github.com/jaweria01/VulFix-RAG/blob/6686d6f3dcc78373b2735dcdb53b9bd40cadaf0c/Screenshots/Fig3-knowledgebase-Loaded%20into%20chromadb.png)
+
+### Figure 4. Security Knowledge Retrieval
+
+Given a vulnerability query, the system retrieves the most relevant CWE guidance, repair strategies, and secure coding recommendations to support LLM-based patch generation
+
+![Security Knowledge Retrieval](https://github.com/jaweria01/VulFix-RAG/blob/6686d6f3dcc78373b2735dcdb53b9bd40cadaf0c/Screenshots/Fig4-Security%20Knowledge%20Retrieval.png)
+
+
+## Figure 5 — Patch Generation
 *DeepSeek-generated security patch using retrieved vulnerability knowledge from the RAG pipeline.*
 
-![Patch Generation1](https://github.com/jaweria01/VulFix-RAG/blob/be3e14c86389f3dea781398a6f9bd86bf9a012fa/Screenshots/Fig3-Patch-Generation1.png)
+![Patch Generation1](https://github.com/jaweria01/VulFix-RAG/blob/6686d6f3dcc78373b2735dcdb53b9bd40cadaf0c/Screenshots/Fig5-Patch-Generation1.png)
 
-![Patch Generation2](https://github.com/jaweria01/VulFix-RAG/blob/be3e14c86389f3dea781398a6f9bd86bf9a012fa/Screenshots/Fig3-Patch-Generaton2.png)
+![Patch Generation2](https://github.com/jaweria01/VulFix-RAG/blob/6686d6f3dcc78373b2735dcdb53b9bd40cadaf0c/Screenshots/Fig5-Patch-Generaton2.png)
 
-## Figure 4 — Patch Validation
+
+## Figure 6 — Patch Validation
 
 *Automated validation confirming that generated patches successfully mitigate identified vulnerabilities.*
 
-![Patch Validation](https://github.com/jaweria01/VulFix-RAG/blob/be3e14c86389f3dea781398a6f9bd86bf9a012fa/Screenshots/Fig4-Patch-Validation.png)
+![Patch Validation](https://github.com/jaweria01/VulFix-RAG/blob/6686d6f3dcc78373b2735dcdb53b9bd40cadaf0c/Screenshots/Fig6-Patch-Validation.png)
 
 
 ## Workflow Explanation
