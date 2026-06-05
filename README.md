@@ -158,6 +158,25 @@ The generated patch is automatically validated using vulnerability-specific secu
 
 If validation succeeds, the framework outputs a validated security patch that can be reviewed and integrated by developers.
 
+## Technologies Used
+**Programming Language:** Python
+**Program Analysis:** Python AST
+**Vector Database:** ChromaDB
+**Embedding Model:** Sentence Transformers, all-MiniLM-L6-v2
+**Large Language Model:** DeepSeek, OpenRouter API
+**Security Standards:** CWE (Common Weakness Enumeration), OWASP Security Concepts
+**Development Tools:** VS Code, Git, GitHub
+
+## Results
+
+The framework successfully:
+
+1. Detects vulnerable code using AST analysis
+2. Classifies vulnerabilities using CWE identifiers
+3. Retrieves security knowledge using semantic search
+4. Generates secure patches using DeepSeek LLM
+5. Validates generated fixes automatically
+
 ## Future Work
 
 - Support for additional CWE categories
