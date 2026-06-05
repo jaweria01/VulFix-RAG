@@ -67,11 +67,13 @@ Uses DeepSeek through OpenRouter to generate secure code patches.
 
 Automatically validates generated patches against vulnerability-specific security rules.
 
-## System Architecture
+## Experimental Results and Workflow Demonstration
+
+### System Architecture
 
 ![System Architecture](https://github.com/jaweria01/VulFix-RAG/blob/cae03f7ccc3338ae2ea99996a0875d36122e6624/Screenshots/Fig1-VulFix-RAG%20System%20Architecture.png)
 
-## Figure 2. AST-Based Vulnerability Detection
+### Figure 2. AST-Based Vulnerability Detection
 
 *AST-based vulnerability detection identifying SQL Injection, Command Injection, and Hardcoded Credentials.*
 
@@ -90,7 +92,7 @@ Given a vulnerability query, the system retrieves the most relevant CWE guidance
 ![Security Knowledge Retrieval](https://github.com/jaweria01/VulFix-RAG/blob/6686d6f3dcc78373b2735dcdb53b9bd40cadaf0c/Screenshots/Fig4-Security%20Knowledge%20Retrieval.png)
 
 
-## Figure 5 — Patch Generation
+### Figure 5 — LLM-Based Patch Generation
 *DeepSeek-generated security patch using retrieved vulnerability knowledge from the RAG pipeline.*
 
 ![Patch Generation1](https://github.com/jaweria01/VulFix-RAG/blob/6686d6f3dcc78373b2735dcdb53b9bd40cadaf0c/Screenshots/Fig5-Patch-Generation1.png)
@@ -98,7 +100,7 @@ Given a vulnerability query, the system retrieves the most relevant CWE guidance
 ![Patch Generation2](https://github.com/jaweria01/VulFix-RAG/blob/6686d6f3dcc78373b2735dcdb53b9bd40cadaf0c/Screenshots/Fig5-Patch-Generaton2.png)
 
 
-## Figure 6 — Patch Validation
+### Figure 6 — Automated Patch Validation
 
 *Automated validation confirming that generated patches successfully mitigate identified vulnerabilities.*
 
