@@ -68,7 +68,7 @@ Uses DeepSeek through OpenRouter to generate secure code patches.
 Automatically validates generated patches against vulnerability-specific security rules.
 
 ## System Architecture
-![System Architecture]([screenshots/architecture.png](https://github.com/jaweria01/VulFix-RAG/blob/cae03f7ccc3338ae2ea99996a0875d36122e6624/Screenshots/Fig1-VulFix-RAG%20System%20Architecture.png))
+![System Architecture](https://github.com/jaweria01/VulFix-RAG/blob/cae03f7ccc3338ae2ea99996a0875d36122e6624/Screenshots/Fig1-VulFix-RAG%20System%20Architecture.png)
 
 ## Figure 2 — Vulnerability Detection
 
