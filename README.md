@@ -68,6 +68,25 @@ Uses DeepSeek through OpenRouter to generate secure code patches.
 Automatically validates generated patches against vulnerability-specific security rules.
 
 ## System Architecture
+![System Architecture](screenshots/architecture.png)
+
+## Figure 2 — Vulnerability Detection
+
+![Vulnerability Detection](screenshots/detection.png)
+
+*AST-based vulnerability detection identifying SQL Injection, Command Injection, and Hardcoded Credentials.*
+
+## Figure 3 — Patch Generation
+
+![Patch Generation](screenshots/patch_generation.png)
+
+*DeepSeek-generated security patch using retrieved vulnerability knowledge from the RAG pipeline.*
+
+## Figure 4 — Patch Validation
+
+![Patch Validation](screenshots/validation.png)
+
+*Automated validation confirming that generated patches successfully mitigate identified vulnerabilities.*
 
 
 ## Workflow Explanation
