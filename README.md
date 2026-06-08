@@ -1,4 +1,4 @@
-# VulFix-RAG: Knowledge-Augmented Vulnerability Repair Framework
+# VulFix-RAG: Retrieval-Augmented Vulnerability Analysis and Repair System
 ## Overview
 
 VulFix-RAG is a Retrieval-Augmented Generation (RAG) framework for automated software vulnerability detection and repair.
